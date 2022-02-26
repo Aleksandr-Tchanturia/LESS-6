@@ -1,0 +1,68 @@
+/*background styles*/
+.background {
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+/*animation styles*/
+.animation-block1 {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top:800px;
+	left: 400px;
+	animation: mananimation 1s 6;
+}
+.animation-block2 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:650px;
+	right: 500px;
+	animation: shipanimation 7s;
+}
+.animation-block3 {
+	width: 60px;
+	height: 90px;
+	position: absolute;
+	top:450px;
+	right: 200px;
+	animation: Seagullanimation 6s;
+}
+.ship {
+	width: 580px;
+	height: 420px;
+}
+.man {
+	width: 120px;
+	height: 150px;
+}
+.Seagull {
+	width: 120px;
+	height: 150px;
+}
+
+@keyframes shipanimation {
+    0% {right: 500px;}
+    25% {right: 800px;}
+    50% {right: 1100px;}
+    75% {right: 1400px;}
+    100% {right: 1700px;}
+}
+
+@keyframes mananimation {
+	from{top: 800px; }
+	to{top:750px;}
+}
+
+@keyframes Seagullanimation {
+    0% {right: 100px;}
+    20% {right: 350px;}
+    25% {top: 550px;}
+    40% {right: 550px;}
+    60% {top: 400px;}
+    65% {right: 850px;}
+    80% {right: 1100px;}
+    100% {right: 1450px;}
+}
